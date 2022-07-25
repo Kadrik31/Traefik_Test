@@ -1,0 +1,12 @@
+# Docker configuration backend
+providers:
+  docker:
+    defaultRule: "Host(`{{ trimPrefix `/` .Name }}.CT.localhost`)"
+
+# API and dashboard configuration
+api:
+  insecure: true
+
+# launch traefic: docker run -d -p 8080:8080 -p 80:80 -v $PWD/traefik.yml:/etc/traefik/traefik.yml -v /var/run/docker.sock:/var/run/docker.sock traefik:v2.5 
+# start backend server 1: docker run -d --name first traefik/whoami
+# start backend server 2: docker run -d --name second traefik/whoami
