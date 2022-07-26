@@ -21,3 +21,21 @@ localhost (traefik)
  -- first.localhost (first backend server)
  
  -- second.localhost (second backend server)
+ 
+ 
+ # Troubleshoot
+ 
+ When testing this reverse proxy
+ I was facing an issue this docker desktop it was stuk on Starting State.
+ 
+ I tested many option found on stackoverflow nothing works. 
+ 
+ Finally i find this usefull instruction that solve momentanelly the problem.
+ https://dev.to/ivanauliaa/when-my-docker-desktop-stuck-on-starting-state-nda
+ 
+ the origin of blocking on starting state was Hyper-V Manager and its solved by
+ 
+ 1) stoping Hyper-V: type Hyper-V Manager in windows search
+ 2) retarting PC
+ 3) manually stop and rm any docker contenair
+ 
