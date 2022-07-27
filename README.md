@@ -18,9 +18,9 @@ Then we start some backend servers and we connect them to traefik who automatica
 
 localhost (traefik)
  
- -- first.localhost (first backend server)
+ -- first.ct.localhost (first backend server)
  
- -- second.localhost (second backend server)
+ -- second.ct.localhost (second backend server)
  
  
  # Troubleshoot
